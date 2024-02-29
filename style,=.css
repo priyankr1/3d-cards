@@ -1,0 +1,84 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    padding:0;
+    margin: 0;
+    background-color: #191c29; 
+    display: flex;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    justify-content: center;
+    gap: 20px;
+}
+
+.card1{
+    background-image:url('https://ggayane.github.io/css-experiments/cards/dark_rider-cover.jpg');
+    background-size: cover;
+    background-repeat: none;
+    height: 67vh;
+    width: 22vw;
+    position: relative;
+    display: grid;
+    place-items: center;
+   
+}
+.card2{
+   background-image:url('https://ggayane.github.io/css-experiments/cards/force_mage-cover.jpg');
+   background-size: cover;
+   background-repeat: none;
+   height: 67vh;
+   width: 22vw;
+   display: grid;
+   place-items: center;
+   position:relative;
+}
+.imh{
+    height: 65vh;
+    width: 22vw
+    ;
+    display: none;
+    transition: all ease-in 10s;
+}
+.card1:hover{
+    transform:rotateX(40deg);
+    box-shadow: 
+    5px 5px 10px rgba(0, 0, 0, 0.5), /* Top-right shadow */
+    -5px -5px 40px rgba(0, 0, 0, 0.5), /* Bottom-left shadow with increased blur */
+     5px -5px 10px rgba(0, 0, 0, 0.5), /* Bottom-right shadow */
+    -5px 5px 40px rgba(0, 0, 0, 0.5); /* Top-left shadow */
+}
+.card1:hover .imh{
+    
+    position: absolute;
+    display: inherit;
+    cursor: pointer;
+    bottom: 165px;
+}
+.imh1{
+    height:67vh;
+    width: 22vw;
+    display: none;
+    transition: all ease-in-out 10s;
+}
+.card2:hover .imh1{
+    position: absolute;
+    display: inherit;
+    cursor: pointer;
+    bottom:165px;
+}
+.card2:hover{
+    transform: rotateX(40deg);
+    box-shadow:
+    5px 5px 10px rgba(0, 0, 0, 0.5), /* Top-right shadow */
+    -5px -5px 40px rgba(0, 0, 0, 0.5), /* Bottom-left shadow with increased blur */
+     5px -5px 10px rgba(0, 0, 0, 0.5), /* Bottom-right shadow */
+    -5px 5px 40px rgba(0, 0, 0, 0.5); /* Top-left shadow */ ;
+}
+.nameImg{
+    width: 15vw;
+    position: absolute ;
+    bottom: 0;
+}
